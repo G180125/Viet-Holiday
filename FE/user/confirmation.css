@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+:root {
+    --img-size: 150px
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: top 0.3s;
+}
+
+body {
+    height: fit-content;
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .header-logo {
+    height: auto;
+    width: 150px;
+}
+
+.navbar a {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li > a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+  
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: 0.3s;
+    transform: translateY(10px);
+}
+  
+li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: black;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.sign-up-button {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sign-up-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.sign-in-button {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #FFCD6B;
+    border: 1px solid #FFCD6B;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sign-in-button:hover {
+    background-color: #9c7d3f;
+    color: white;
+}
+
+
+#user-account {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#user-account option {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FFCD6B;
+    color: black;
+}
+
+.container-general{
+    background-color: rgba(255, 205, 107, 0.5);
+    margin-top: 7%;
+    position: relative;
+    padding: 10px 2.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-panel {
+    border: none;
+    outline: none;
+    width: 75%;
+    padding: 30px;
+    margin: 10px 0px;
+    background-color: white;
+}
+
+
+.title {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.title h2 {
+    font-size: 56px;
+    font-style: italic;
+}
+
+.my-form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.left, .right {
+    padding: 10px;
+}
+
+
+form h4 {
+    font-size: 36px;
+}
+
+form input, 
+form select {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    background-color: lightgrey;
+}
+
+.confirm-button {
+    width: 20%;
+    margin:  0px -55px;
+    padding: 10px;
+    background-color: #FFCD6B;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    
+}
+
+
+.right-panel {
+    margin: 2.5%;
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 300px;
+    padding: 15px 20px;
+    background-color: white;
+}
+
+.order-summary {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right-panel .cost {
+    display: block;
+    text-align: right;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: #474745;
+    color: white;
+}
+
+.group-id {
+    font-style: italic;
+    text-align: center;
+    background-color: #474745;
+    color: white;
+}
